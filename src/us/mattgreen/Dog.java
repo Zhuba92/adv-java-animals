@@ -11,7 +11,8 @@ public class Dog extends Pet implements Talkable {
         this.friendly = friendly;
     }
 
-    public boolean isFriendly() {
+    public boolean isFriendly()
+    {
         return friendly;
     }
 

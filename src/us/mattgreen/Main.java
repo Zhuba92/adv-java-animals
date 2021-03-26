@@ -1,6 +1,7 @@
 package us.mattgreen;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -11,10 +12,12 @@ public class Main {
         ArrayList<Talkable> zoo = new ArrayList<>();
 
         // Lines to Replace Begin Here
-        zoo.add(new Dog(true, "Bean"));
-        zoo.add(new Cat(9, "Charlie"));
-        zoo.add(new Teacher(44, "Stacy Read"));
+        //zoo.add(new Dog(true, "Bean"));
+        //zoo.add(new Cat(9, "Charlie"));
+        //zoo.add(new Teacher(44, "Stacy Read"));
         // End Lines to Replace
+        UserAnimal animal = new UserAnimal(zoo);
+        animal.getAnimal();
 
         for (Talkable thing : zoo) {
             printOut(thing);
